@@ -114,3 +114,13 @@ fdisk: permite ver las particiones del disco y permite particionar
 
 En este caso al querer mostrar la tabla de particiones del disco donde está instalado el sistema operativo, en este caso Linux, nos vamos al disco de la máquina virtual, el cual tiene como etiqueta “sda”. Nos muestra información importante como el tamaño del disco, el modelo del disco, el tamaño de los sectores, el tipo de etiqueta del disco, su identificador y por último la tabla de particiones. En la primera partición tiene la bandera de booteable, la segunda es una partición extendida y la tercera partición se encuentra dentro de la partición extendida.
 
+## Como conectar una memoria usb y mostrar su tabla de particiones en terminal
+
+Para poder visualizar la tabla de particiones de nuestra usb, se ejecuta el siguiente comando:
+
+```sudo fdisk -l /dev/sdb```
+
+![Figura 9](/Capturas/Imagen9.png)
+
+Nos da el tamaño de la usb en GB, en bytes y en sectores. El modelo de la usb es DataTraveler 2.0. Los sectores son de 512 bytes. Y nos da la tabla de particiones, el usb tiene 4 particiones, nos indica el inicio y final de cada partición, el tamaño, y el tipo, hay desconocida y de gestor de arranque.
+
