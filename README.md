@@ -97,3 +97,20 @@ Para poder enlistar la información de los dispositivos de bloque conectados se 
 Dicho comando da como resultado todos los dispositivos de bloque conectados a la computadora, da su nombre, el tamaño y el MOUNTPOINT, el cual va a ser el lugar en donde se montó dicho dispositivo. Si no hay ningún parámetro en la sección significa que no está montado. 
 
 ![Figura 7](/Capturas/Imagen7.png)
+
+## Como mostrar la tabla de particiones del disco donde está instalado el sistema operativo en terminal
+
+Para mostrar la tabla de particiones se utiliza el siguiente comando:
+
+```sudo fdisk -l “Dirección de dispositivo”```
+
+sudo:Da permisos de súper usuario
+
+fdisk: permite ver las particiones del disco y permite particionar
+
+-l: Enlista 
+
+![Figura 8](/Capturas/Imagen8.png)
+
+En este caso al querer mostrar la tabla de particiones del disco donde está instalado el sistema operativo, en este caso Linux, nos vamos al disco de la máquina virtual, el cual tiene como etiqueta “sda”. Nos muestra información importante como el tamaño del disco, el modelo del disco, el tamaño de los sectores, el tipo de etiqueta del disco, su identificador y por último la tabla de particiones. En la primera partición tiene la bandera de booteable, la segunda es una partición extendida y la tercera partición se encuentra dentro de la partición extendida.
+
