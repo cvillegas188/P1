@@ -88,3 +88,12 @@ Para desmontarlo se utiliza la siguiente instrucción:
 
 En la figura se puede ver el comando para desmontar, seguido de lsblk para verificar que se haya desmotado, y en efecto, ya no aparece ningún parámetro en la sección de MOUNTPOINT.
 
+## Como enlistar la información de los dispositivos de bloque conectados
+
+Para poder enlistar la información de los dispositivos de bloque conectados se utiliza el siguiente comando:
+
+```lsblk```
+
+Dicho comando da como resultado todos los dispositivos de bloque conectados a la computadora, da su nombre, el tamaño y el MOUNTPOINT, el cual va a ser el lugar en donde se montó dicho dispositivo. Si no hay ningún parámetro en la sección significa que no está montado. 
+
+![Figura 7](/Capturas/Imagen7.png)
